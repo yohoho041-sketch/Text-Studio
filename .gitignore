@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Build and Packaging
+.flatpak-builder/
+build/
+*.AppImage
+
+# IDE/OS files
+.DS_Store
+.idea/
+.vscode/

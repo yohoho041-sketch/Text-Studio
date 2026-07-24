@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.bluefin.SimpleJavaEditor</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>BlueJava Studio</name>
+  <summary>A fast, minimalist Java text editor built for Linux Bluefin</summary>
+
+  <developer id="io.github.bluefin">
+    <name>BlueJava Studio Developers</name>
+  </developer>
+
+  <url type="homepage">https://github.com/yohoho041-sketch/Text-Studio</url>
+  <url type="bugtracker">https://github.com/yohoho041-sketch/Text-Studio/issues</url>
+
+  <description>
+    <p>
+      BlueJava Studio is a clean, ultra-fast GTK 4 and Libadwaita text editor designed specifically for editing Java code files and folders on Linux Bluefin.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Multi-tab editing for working on multiple Java files simultaneously</li>
+      <li>Distraction-free Full Screen mode (F11)</li>
+      <li>Vibrant matching bracket highlighting for Java syntax</li>
+      <li>Adwaita Dark and Light native system themes</li>
+      <li>Folder navigation sidebar with single-click file opening</li>
+      <li>Inline code search (Ctrl+F) and line jumper (Ctrl+L)</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">io.github.bluefin.SimpleJavaEditor.desktop</launchable>
+
+  <releases>
+    <release version="1.0.0" date="2026-07-24">
+      <description>
+        <p>Initial release of BlueJava Studio for Linux Bluefin.</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1" />
+
+  <categories>
+    <category>Development</category>
+    <category>Utility</category>
+    <category>TextEditor</category>
+  </categories>
+</component>
+
