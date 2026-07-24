@@ -6,7 +6,7 @@ INSTALL_APP_DIR="$HOME/.local/share/applications"
 INSTALL_ICON_DIR="$HOME/.local/share/icons/hicolor/512x512/apps"
 INSTALL_LIB_DIR="$HOME/.local/share/text-studio"
 
-echo "Installing Text Studio on Linux Bluefin..."
+echo "Installing Text Studio on Linux..."
 
 mkdir -p "$INSTALL_BIN_DIR"
 mkdir -p "$INSTALL_APP_DIR"
@@ -43,7 +43,7 @@ cat << EOF > "$INSTALL_APP_DIR/io.github.yohoho041_sketch.TextStudio.desktop"
 [Desktop Entry]
 Name=Text Studio
 GenericName=Text Editor
-Comment=Simple, native GTK4 text editor for Linux Bluefin
+Comment=Simple, native GTK4 text editor for Linux
 Exec=$INSTALL_BIN_DIR/text-studio %F
 Icon=$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png
 Terminal=false

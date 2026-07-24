@@ -4,7 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Text Studio</name>
-  <summary>A fast, minimalist Java text editor built for Linux Bluefin</summary>
+  <summary>A fast, minimalist Java text editor built for Linux</summary>
 
   <developer id="io.github.yohoho041_sketch">
     <name>Text Studio Developers</name>
@@ -15,7 +15,7 @@
 
   <description>
     <p>
-      Text Studio is a clean, ultra-fast GTK 4 and Libadwaita text editor specially made for Java coding on Linux Bluefin.
+      Text Studio is a clean, ultra-fast GTK 4 and Libadwaita text editor specially made for Java coding on Linux.
     </p>
     <p>Features include:</p>
     <ul>
@@ -33,7 +33,7 @@
   <releases>
     <release version="1.0.0" date="2026-07-24">
       <description>
-        <p>Initial release of BlueJava Studio for Linux Bluefin.</p>
+        <p>Initial release of Text Studio for Linux.</p>
       </description>
     </release>
   </releases>

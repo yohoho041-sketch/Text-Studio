@@ -1,6 +1,6 @@
 # Text Studio
 
-**Text Studio** is a clean, ultra-fast GTK 4 and Libadwaita text editor specially created for Java coding on Linux Bluefin, Fedora, and all modern Linux distributions.
+**Text Studio** is a clean, ultra-fast GTK 4 and Libadwaita text editor specially created for Java coding on Linux.
 
 ![Text Studio](assets/text-studio.svg)
 
@@ -19,7 +19,7 @@
 
 ## Quick 1-Command Installation
 
-You can install **Text Studio** on any Linux distribution (Bluefin, Fedora, Ubuntu, Arch, etc.) by running this single command in your terminal:
+You can install **Text Studio** on any Linux distribution (Fedora, Ubuntu, Arch, Debian, etc.) by running this single command in your terminal:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/yohoho041-sketch/Text-Studio/main/install.sh | bash
