@@ -13,14 +13,22 @@ mkdir -p "$INSTALL_APP_DIR"
 mkdir -p "$INSTALL_ICON_DIR"
 mkdir -p "$INSTALL_LIB_DIR"
 
+# If executed via curl | bash, create a temporary directory and clone the repo
+if [ ! -d "src" ]; then
+    TMP_DIR=$(mktemp -d)
+    echo "📦 Fetching latest files from GitHub..."
+    git clone --depth 1 https://github.com/yohoho041-sketch/Text-Studio.git "$TMP_DIR/Text-Studio"
+    cd "$TMP_DIR/Text-Studio"
+fi
+
 # Copy source files
 cp -r src "$INSTALL_LIB_DIR/"
 cp java_studio.py "$INSTALL_LIB_DIR/"
 
 # Copy custom user icon to library folder and system icon path
 if [ -f java-studio.png ]; then
-    cp java-studio.png "$INSTALL_LIB_DIR/io.github.bluefin.SimpleJavaEditor.png"
-    cp java-studio.png "$INSTALL_ICON_DIR/io.github.bluefin.SimpleJavaEditor.png"
+    cp java-studio.png "$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png"
+    cp java-studio.png "$INSTALL_ICON_DIR/io.github.yohoho041_sketch.TextStudio.png"
 fi
 
 # Create binary launcher
@@ -31,13 +39,13 @@ EOF
 chmod +x "$INSTALL_BIN_DIR/java-studio"
 
 # Create Desktop Launcher Shortcut using absolute path to the icon for instant GNOME reloading
-cat << EOF > "$INSTALL_APP_DIR/io.github.bluefin.SimpleJavaEditor.desktop"
+cat << EOF > "$INSTALL_APP_DIR/io.github.yohoho041_sketch.TextStudio.desktop"
 [Desktop Entry]
 Name=Text Studio
 GenericName=Text Editor
 Comment=Simple, native GTK4 text editor for Linux Bluefin
 Exec=$INSTALL_BIN_DIR/java-studio %F
-Icon=$INSTALL_LIB_DIR/io.github.bluefin.SimpleJavaEditor.png
+Icon=$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png
 Terminal=false
 Type=Application
 Categories=Development;TextEditor;Utility;
@@ -58,3 +66,4 @@ echo "✅ Text Studio has been installed successfully!"
 echo "📍 Launcher binary: $INSTALL_BIN_DIR/java-studio"
 echo "🖥️ Desktop shortcut added to App Launcher menu!"
 echo "✨ You can launch it by running 'java-studio' or from your application menu."
+
