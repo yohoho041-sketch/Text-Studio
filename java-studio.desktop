@@ -2,7 +2,7 @@
 Type=Application
 Name=Text Studio
 Comment=Fast, minimalist text editor specially made for Java coding on Linux Bluefin
-Exec=java-studio %F
+Exec=text-studio %F
 Icon=io.github.yohoho041_sketch.TextStudio
 Categories=Utility;TextEditor;Development;
 Terminal=false

@@ -32,11 +32,11 @@ if [ -f java-studio.png ]; then
 fi
 
 # Create binary launcher
-cat << EOF > "$INSTALL_BIN_DIR/java-studio"
+cat << EOF > "$INSTALL_BIN_DIR/text-studio"
 #!/usr/bin/env bash
 PYTHONPATH="$INSTALL_LIB_DIR:\$PYTHONPATH" exec python3 "$INSTALL_LIB_DIR/java_studio.py" "\$@"
 EOF
-chmod +x "$INSTALL_BIN_DIR/java-studio"
+chmod +x "$INSTALL_BIN_DIR/text-studio"
 
 # Create Desktop Launcher Shortcut using absolute path to the icon for instant GNOME reloading
 cat << EOF > "$INSTALL_APP_DIR/io.github.yohoho041_sketch.TextStudio.desktop"
@@ -44,7 +44,7 @@ cat << EOF > "$INSTALL_APP_DIR/io.github.yohoho041_sketch.TextStudio.desktop"
 Name=Text Studio
 GenericName=Text Editor
 Comment=Simple, native GTK4 text editor for Linux Bluefin
-Exec=$INSTALL_BIN_DIR/java-studio %F
+Exec=$INSTALL_BIN_DIR/text-studio %F
 Icon=$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png
 Terminal=false
 Type=Application
@@ -63,7 +63,7 @@ elif command -v gtk-update-icon-cache &> /dev/null; then
 fi
 
 echo "✅ Text Studio has been installed successfully!"
-echo "📍 Launcher binary: $INSTALL_BIN_DIR/java-studio"
+echo "📍 Launcher binary: $INSTALL_BIN_DIR/text-studio"
 echo "🖥️ Desktop shortcut added to App Launcher menu!"
-echo "✨ You can launch it by running 'java-studio' or from your application menu."
+echo "✨ You can launch it by running 'text-studio' or from your application menu."
 
