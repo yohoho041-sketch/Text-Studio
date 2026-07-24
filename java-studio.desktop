@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=BlueJava Studio
-Comment=Fast, minimalist Java text editor for Linux Bluefin
+Name=Text Studio
+Comment=Fast, minimalist text editor specially made for Java coding on Linux Bluefin
 Exec=java-studio %F
 Icon=io.github.yohoho041_sketch.TextStudio
 Categories=Utility;TextEditor;Development;

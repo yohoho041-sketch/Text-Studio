@@ -3,11 +3,11 @@
   <id>io.github.yohoho041_sketch.TextStudio</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-  <name>BlueJava Studio</name>
+  <name>Text Studio</name>
   <summary>A fast, minimalist Java text editor built for Linux Bluefin</summary>
 
   <developer id="io.github.yohoho041_sketch">
-    <name>BlueJava Studio Developers</name>
+    <name>Text Studio Developers</name>
   </developer>
 
   <url type="homepage">https://github.com/yohoho041-sketch/Text-Studio</url>
@@ -15,7 +15,7 @@
 
   <description>
     <p>
-      BlueJava Studio is a clean, ultra-fast GTK 4 and Libadwaita text editor designed specifically for editing Java code files and folders on Linux Bluefin.
+      Text Studio is a clean, ultra-fast GTK 4 and Libadwaita text editor specially made for Java coding on Linux Bluefin.
     </p>
     <p>Features include:</p>
     <ul>
