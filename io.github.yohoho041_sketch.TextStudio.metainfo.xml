@@ -6,7 +6,7 @@
   <name>BlueJava Studio</name>
   <summary>A fast, minimalist Java text editor built for Linux Bluefin</summary>
 
-  <developer id="io.github.bluefin">
+  <developer id="io.github.yohoho041_sketch">
     <name>BlueJava Studio Developers</name>
   </developer>
 
@@ -28,7 +28,7 @@
     </ul>
   </description>
 
-  <launchable type="desktop-id">io.github.bluefin.SimpleJavaEditor.desktop</launchable>
+  <launchable type="desktop-id">io.github.yohoho041_sketch.TextStudio.desktop</launchable>
 
   <releases>
     <release version="1.0.0" date="2026-07-24">
