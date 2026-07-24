@@ -6,7 +6,7 @@ INSTALL_APP_DIR="$HOME/.local/share/applications"
 INSTALL_ICON_DIR="$HOME/.local/share/icons/hicolor/512x512/apps"
 INSTALL_LIB_DIR="$HOME/.local/share/text-studio"
 
-echo "🚀 Installing Text Studio on Linux Bluefin..."
+echo "Installing Text Studio on Linux Bluefin..."
 
 mkdir -p "$INSTALL_BIN_DIR"
 mkdir -p "$INSTALL_APP_DIR"
@@ -16,7 +16,7 @@ mkdir -p "$INSTALL_LIB_DIR"
 # If executed via curl | bash, create a temporary directory and clone the repo
 if [ ! -d "src" ]; then
     TMP_DIR=$(mktemp -d)
-    echo "📦 Fetching latest files from GitHub..."
+    echo "Fetching latest files from GitHub..."
     git clone --depth 1 https://github.com/yohoho041-sketch/Text-Studio.git "$TMP_DIR/Text-Studio"
     cd "$TMP_DIR/Text-Studio"
 fi
@@ -62,8 +62,8 @@ elif command -v gtk-update-icon-cache &> /dev/null; then
     gtk-update-icon-cache "$HOME/.local/share/icons/hicolor" || true
 fi
 
-echo "✅ Text Studio has been installed successfully!"
-echo "📍 Launcher binary: $INSTALL_BIN_DIR/text-studio"
-echo "🖥️ Desktop shortcut added to App Launcher menu!"
-echo "✨ You can launch it by running 'text-studio' or from your application menu."
+echo "Text Studio has been installed successfully!"
+echo "Launcher binary: $INSTALL_BIN_DIR/text-studio"
+echo "Desktop shortcut added to App Launcher menu!"
+echo "You can launch it by running 'text-studio' or from your application menu."
 
