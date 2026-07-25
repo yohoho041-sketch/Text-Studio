@@ -26,7 +26,13 @@ cp -r src "$INSTALL_LIB_DIR/"
 cp java_studio.py "$INSTALL_LIB_DIR/"
 
 # Copy custom user icon to library folder and system icon path
-if [ -f java-studio.png ]; then
+if [ -f text-studio.png ]; then
+    cp text-studio.png "$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png"
+    cp text-studio.png "$INSTALL_ICON_DIR/io.github.yohoho041_sketch.TextStudio.png"
+elif [ -f assets/text-studio.png ]; then
+    cp assets/text-studio.png "$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png"
+    cp assets/text-studio.png "$INSTALL_ICON_DIR/io.github.yohoho041_sketch.TextStudio.png"
+elif [ -f java-studio.png ]; then
     cp java-studio.png "$INSTALL_LIB_DIR/io.github.yohoho041_sketch.TextStudio.png"
     cp java-studio.png "$INSTALL_ICON_DIR/io.github.yohoho041_sketch.TextStudio.png"
 fi
